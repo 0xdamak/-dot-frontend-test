@@ -1,0 +1,38 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div {
+    position: relative;
+    min-width: 28rem;
+    max-width: 70%;
+    background-color: var(--bg-white);
+    border-radius: 1rem;
+    & > svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1.5rem;
+      height: 2.5rem;
+      fill: #444444;
+      stroke: white;
+      stroke-width: 1.5;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    & > div {
+      max-width: 90%;
+    }
+  }
+}
