@@ -1,0 +1,89 @@
+.container {
+  margin: 5rem;
+  & > h1 {
+    text-align: center;
+    margin: calc(50vh - 14px) 0;
+    line-height: 1;
+  }
+  & > h2 {
+    text-align: center;
+    margin: 2rem;
+    text-transform: uppercase;
+  }
+  & > button {
+    display: block;
+    margin-left: auto;
+    width: 19rem;
+    padding: 0.9rem 1rem;
+    background-image: var(--button-hover);
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 9rem;
+    transition: all 0.3s;
+    &:hover {
+      background-image: none;
+    }
+  }
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  min-width: 28rem;
+  max-width: 70rem;
+  & > svg {
+    width: 15rem;
+    stroke: #008100;
+  }
+  & > h3 {
+    font-size: 1.9rem;
+    color: #008100;
+    line-height: 1;
+  }
+  & > div {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #008100;
+    table {
+      font-size: 1.3rem;
+      border-collapse: collapse;
+      width: 100%;
+      tr {
+        text-align: center;
+        th,
+        td {
+          padding: 1rem;
+        }
+        th {
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+      tbody {
+        background-color: var(--bg-white);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin: 1rem;
+  }
+}
